@@ -1,0 +1,31 @@
+:root {
+	font-family: "Trebuchet MS", "Segoe UI", sans-serif;
+	font-size: 16px;
+	color: #554a40;
+	background: #fdfbf7;
+	font-synthesis: none;
+	text-rendering: optimizeLegibility;
+	-webkit-font-smoothing: antialiased;
+	--latte-page: #fdfbf7;
+	--latte-oatmeal: #f3efea;
+	--latte-surface: #faf7f2;
+	--latte-border: #e5ddd3;
+	--latte-espresso: #1e1a18;
+	--latte-espresso-deep: #171412;
+	--latte-espresso-soft: #39332e;
+	--latte-text: #554a40;
+	--latte-muted: #7a7067;
+	--latte-accent: #ad8b6a;
+	--latte-accent-hover: #87694f;
+	--latte-accent-soft: #f0e7dc;
+	--latte-accent-text: #70543b;
+	--latte-amber-bg: #f9ead7;
+	--latte-amber-text: #8c4f24;
+	--latte-success-bg: #e8eee6;
+	--latte-success-text: #526647;
+	--latte-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
+}
+* { box-sizing: border-box; }
+body { margin: 0; min-width: 320px; color: var(--latte-text); background: var(--latte-page); }
+button, a { font: inherit; }
+button { cursor: pointer; }

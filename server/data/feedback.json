@@ -1,0 +1,38 @@
+[
+  {
+    "id": "3d65d71f-4755-4401-aa54-d70b51f42f6d",
+    "message": "done w chair problem",
+    "createdAt": "2026-10-30T06:35:43.055Z",
+    "role": "worker"
+  },
+  {
+    "id": "64a62611-b1c3-48e1-a2a8-df0d0c4afac2",
+    "message": "issues are assigned to respected staff",
+    "createdAt": "2026-10-30T06:34:52.958Z",
+    "role": "admin"
+  },
+  {
+    "id": "ad985a09-e7e6-4e34-b845-b049fcc763ca",
+    "message": "improve it",
+    "createdAt": "2026-10-30T06:33:37.137Z",
+    "role": "student"
+  },
+  {
+    "id": "132f255a-cd78-4dce-952a-0111ab2439ce",
+    "message": "done.",
+    "createdAt": "2026-10-30T05:39:46.845Z",
+    "role": "worker"
+  },
+  {
+    "id": "3602285e-b41c-4c6a-b7d8-c1ae9c56f8aa",
+    "message": "issues assigned",
+    "createdAt": "2026-10-30T05:38:33.634Z",
+    "role": "admin"
+  },
+  {
+    "id": "58def883-2258-4376-bef2-a0b801cbccf2",
+    "message": "...",
+    "createdAt": "2026-10-30T05:37:41.498Z",
+    "role": "student"
+  }
+]
