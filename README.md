@@ -80,23 +80,21 @@ New student reports notify the Admin role immediately. Assigning a report notifi
 
 ## Run the Frontend and Backend
 
-Start the backend in one terminal:
+From the repository root, install both applications' dependencies once:
 
 ```powershell
-cd server
-npm install
-Copy-Item .env.example .env
-npm run dev
+npm --prefix server install
+Copy-Item server\.env.example server\.env
+npm --prefix client install
 ```
 
-In a second terminal, start the frontend:
+Start the API and frontend together:
+
 ```powershell
-cd client
-npm install
-npm run dev
+npm --prefix client run dev
 ```
 
-Open the URL printed by Vite, usually `http://localhost:5173/`. The Vite development proxy forwards `/api` requests and the live notification event stream to the backend on port 4000.
+The client command waits until the API responds to its health check before starting Vite. Open the URL printed by Vite, usually `http://127.0.0.1:5173/`. The Vite development proxy forwards `/api` requests and the live notification event stream to the backend on port 4000.
 
 Check it with:
 
