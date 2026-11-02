@@ -1168,6 +1168,8 @@ a:focus-visible {
 .public-feedback-entry p { margin: 0; color: var(--latte-text); font-size: 12px; line-height: 1.55; overflow-wrap: anywhere; }
 .public-feedback-entry footer { display: flex; justify-content: space-between; gap: 12px; margin-top: 8px; color: var(--latte-muted); font-size: 10px; }
 .public-feedback-message { margin: 14px 0 0; color: var(--latte-muted); font-size: 12px; line-height: 1.5; }
+.public-feedback-retry { margin-top: 10px; border: 1px solid var(--latte-border); border-radius: 5px; padding: 7px 10px; background: transparent; color: var(--latte-espresso); font: inherit; font-size: 11px; font-weight: 700; cursor: pointer; }
+.public-feedback-retry:focus-visible { outline: 3px solid var(--latte-accent); outline-offset: 3px; }
 .whisper-form .login-button:disabled { opacity: .7; cursor: wait; }
 .admin-insights-grid {
   display: grid;

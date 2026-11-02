@@ -373,6 +373,7 @@ function PublicFeedbackPanel({ title = 'Campus whispers' }: { title?: string }) 
   const [feedback, setFeedback] = useState<PublicFeedback[]>([])
   const [loading, setLoading] = useState(true)
   const [error, setError] = useState('')
+  const [retryCount, setRetryCount] = useState(0)
 
   useEffect(() => {
     let active = true
@@ -397,7 +398,7 @@ function PublicFeedbackPanel({ title = 'Campus whispers' }: { title?: string }) 
       active = false
       window.removeEventListener('smart-campus-feedback-updated', refresh)
     }
-  }, [])
+  }, [retryCount])
 
   return (
     <section className="public-feedback" aria-labelledby="public-feedback-title">
@@ -405,7 +406,10 @@ function PublicFeedbackPanel({ title = 'Campus whispers' }: { title?: string }) 
       {loading
         ? <p className="public-feedback-message">Loading student feedback…</p>
         : error
-          ? <p className="public-feedback-message" role="status">{error}</p>
+          ? <div className="public-feedback-error" role="status">
+            <p className="public-feedback-message">{error}</p>
+            <button className="public-feedback-retry" type="button" onClick={() => setRetryCount((count) => count + 1)}>Try again</button>
+          </div>
           : feedback.length
             ? <div className="public-feedback-list">{feedback.slice(0, 3).map((entry) => (
               <blockquote className="public-feedback-entry" key={entry.id}>
